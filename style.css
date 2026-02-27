@@ -52,9 +52,6 @@ table, tr, td, th {
   padding: 5px;
 }
 
-th {
-  font-weight: bold;
-}
 
 li {
   margin-left: 20px;
@@ -80,8 +77,11 @@ a:hover {
 
 
 @media screen and (max-width: 704px) {
-
-}
+  table {
+    width: 90%;        /* 혹은 100% → 80% 이런 식으로 줄이기 */
+    margin: 0 auto;    /* 가운데 정렬 */
+    border-spacing: 4px;   /* 셀 사이 간격 줄이기 (테이블이면) */
+  }
 
 
 
